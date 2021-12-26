@@ -26,7 +26,8 @@ class Window(QMainWindow):
             painter.setPen(pen)
             a = random.randint(1, 500)
             painter.drawEllipse(300, 300, a, a)
-
+            painter.drawEllipse(200, 200, a, a)
+            painter.drawEllipse(100, 100, a, a)
     def paintcircle(self):
         self.should_paint_circle = True
         self.update()
