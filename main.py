@@ -27,9 +27,9 @@ class Window(QMainWindow):
             a = random.randint(1, 300)
             b = random.randint(1, 300)
             c = random.randint(1, 300)
-            painter.drawEllipse(400, 400, a, a)
-            painter.drawEllipse(200, 250, b, b)
-            painter.drawEllipse(150, 100, c, c)
+            painter.drawEllipse(a, a, a, a)
+            painter.drawEllipse(b, b, b, b)
+            painter.drawEllipse(c, c, c, c)
 
     def paintcircle(self):
         self.should_paint_circle = True
