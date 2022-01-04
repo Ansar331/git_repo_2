@@ -24,10 +24,13 @@ class Window(QMainWindow):
             pen = QtGui.QPen()
             pen.setWidth(5)
             painter.setPen(pen)
-            a = random.randint(1, 500)
-            painter.drawEllipse(300, 300, a, a)
-            painter.drawEllipse(200, 200, a, a)
-            painter.drawEllipse(100, 100, a, a)
+            a = random.randint(1, 300)
+            b = random.randint(1, 300)
+            c = random.randint(1, 300)
+            painter.drawEllipse(400, 400, a, a)
+            painter.drawEllipse(200, 250, b, b)
+            painter.drawEllipse(150, 100, c, c)
+
     def paintcircle(self):
         self.should_paint_circle = True
         self.update()
